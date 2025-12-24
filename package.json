@@ -4,8 +4,11 @@
   "description": "SDK Solutions - AI Adoptie Coach & IT Consultant website",
   "main": "index.html",
   "scripts": {
-    "dev": "live-server --port=3000",
+    "dev": "live-server --port=3000 --open",
     "build": "echo 'Static site - no build needed'"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   },
   "keywords": [
     "AI adoptie",

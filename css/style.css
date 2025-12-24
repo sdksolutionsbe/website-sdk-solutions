@@ -887,6 +887,21 @@ section {
     font-family: var(--font-mono);
 }
 
+/* Featured Project Card */
+.project-card.featured-project {
+    border: 2px solid var(--accent-green);
+    background: rgba(76, 175, 80, 0.1);
+}
+
+.project-card.featured-project:hover {
+    background: rgba(76, 175, 80, 0.15);
+    border-color: var(--accent-green-light);
+}
+
+.project-card.featured-project .project-icon {
+    background: linear-gradient(135deg, var(--accent-green) 0%, #2e7d32 100%);
+}
+
 .projects-cta {
     text-align: center;
 }
@@ -969,6 +984,15 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 24px;
+}
+
+.portfolio-logo {
+    max-width: 200px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 .screenshot-placeholder {
@@ -1504,8 +1528,8 @@ section {
 }
 
 .footer-logo .logo-img {
-    height: 32px;
-    filter: brightness(0) invert(1);
+    height: 50px;
+    width: auto;
 }
 
 .footer-brand p {
