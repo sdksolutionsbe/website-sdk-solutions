@@ -1,0 +1,32 @@
+SDK Solutions - Images Folder
+==============================
+
+This folder should contain the following images:
+
+1. logo.png - Your SDK Solutions logo (the one you provided)
+   - Recommended size: 200x50px or similar aspect ratio
+   - Transparent background (PNG)
+
+2. favicon.png - Small icon for browser tabs
+   - Size: 32x32px
+   - Based on the logo
+
+3. apple-touch-icon.png - Icon for iOS devices
+   - Size: 180x180px
+
+4. og-image.jpg - Social media preview image
+   - Recommended size: 1200x630px
+   - Used when sharing links on LinkedIn, Facebook, etc.
+   - Should include logo and tagline
+
+5. profile.jpg (optional) - Your professional photo
+   - Recommended size: 400x400px
+   - Will appear in the "Over Mij" section
+
+To add the logo:
+- Copy your logo file to this folder
+- Rename it to 'logo.png'
+- The website will automatically use it
+
+For the favicon, you can use a tool like https://favicon.io to generate
+all necessary favicon sizes from your logo.

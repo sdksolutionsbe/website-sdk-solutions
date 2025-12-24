@@ -1,0 +1,21 @@
+{
+  "name": "sdk-solutions-website",
+  "version": "1.0.0",
+  "description": "SDK Solutions - AI Adoptie Coach & IT Consultant website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "AI adoptie",
+    "AI coach",
+    "digitalisatie",
+    "KMO",
+    "Vlaanderen",
+    "consultancy",
+    "SDK Solutions"
+  ],
+  "author": "Stijn De Ketelaere",
+  "license": "MIT"
+}

@@ -1,0 +1,80 @@
+# Netlify Configuration for SDK Solutions Website
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # No build command needed for static site
+  publish = "."
+
+# Redirect www to non-www
+[[redirects]]
+  from = "https://www.sdk-solutions.be/*"
+  to = "https://sdk-solutions.be/:splat"
+  status = 301
+  force = true
+
+# Pretty URLs (optional - removes .html extension)
+[[redirects]]
+  from = "/blog"
+  to = "/blog.html"
+  status = 200
+
+# Custom 404 page (create 404.html if needed)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security headers
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+    # Content Security Policy (adjust as needed)
+    # Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:;"
+
+# Cache static assets
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML files should revalidate
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Netlify Forms configuration (when enabled)
+# The contact form will automatically work when you add the 'netlify' attribute
+
+# Environment variables can be set in Netlify dashboard
+# [context.production.environment]
+#   NODE_ENV = "production"
+
+# Branch deploys
+[context.deploy-preview]
+  # Settings specific to deploy previews
+
+[context.branch-deploy]
+  # Settings specific to branch deploys

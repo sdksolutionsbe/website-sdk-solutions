@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>Blog | SDK Solutions - AI & Digitalisatie Inzichten voor KMO's</title>
+    <meta name="title" content="Blog | SDK Solutions - AI & Digitalisatie Inzichten voor KMO's">
+    <meta name="description" content="Praktische tips, inzichten en nieuws over AI adoptie, digitalisatie en automatisering voor Vlaamse KMO's. Leer hoe u uw bedrijf kan transformeren.">
+    <meta name="keywords" content="AI blog, digitalisatie tips, KMO automatisering, n8n tutorials, ChatGPT voor bedrijven, Vlaanderen">
+    <meta name="author" content="Stijn De Ketelaere">
+    <meta name="robots" content="index, follow">
+
+    <!-- Geographic Meta Tags (GEO) -->
+    <meta name="geo.region" content="BE-VOV">
+    <meta name="geo.placename" content="Oudenaarde">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sdk-solutions.be/blog">
+    <meta property="og:title" content="Blog | SDK Solutions - AI & Digitalisatie Inzichten">
+    <meta property="og:description" content="Praktische tips over AI adoptie en digitalisatie voor Vlaamse KMO's.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sdk-solutions.be/blog">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "SDK Solutions Blog",
+        "description": "Praktische tips en inzichten over AI adoptie en digitalisatie voor KMO's",
+        "url": "https://sdk-solutions.be/blog",
+        "author": {
+            "@type": "Person",
+            "name": "Stijn De Ketelaere"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SDK Solutions",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://sdk-solutions.be/images/logo.png"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html#home" class="nav-logo">
+                <img src="images/logo.png" alt="SDK Solutions Logo" class="logo-img">
+                <span class="logo-text">SDK Solutions</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#diensten" class="nav-link">Diensten</a>
+                <a href="index.html#over" class="nav-link">Over Mij</a>
+                <a href="index.html#projecten" class="nav-link">Projecten</a>
+                <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="index.html#contact" class="nav-link nav-cta">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero-content">
+                <span class="section-tag">Blog</span>
+                <h1>Inzichten & Tips</h1>
+                <p>Praktische artikelen over AI, digitalisatie en automatisering voor KMO's in Vlaanderen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="categories-filter">
+                <button class="category-btn active" data-category="all">Alle</button>
+                <button class="category-btn" data-category="ai">AI Adoptie</button>
+                <button class="category-btn" data-category="automatisering">Automatisering</button>
+                <button class="category-btn" data-category="digitalisatie">Digitalisatie</button>
+                <button class="category-btn" data-category="tools">Tools & Tips</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Featured Post -->
+                <article class="blog-card blog-card-featured" data-category="ai">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <span class="blog-category">AI Adoptie</span>
+                        <span class="blog-featured-badge">Uitgelicht</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Binnenkort</span>
+                            <span><i class="fas fa-clock"></i> 8 min leestijd</span>
+                        </div>
+                        <h2 class="blog-title">De Complete Gids: AI Implementeren in Uw KMO</h2>
+                        <p class="blog-excerpt">
+                            Een stap-voor-stap handleiding om artificial intelligence succesvol te integreren in uw
+                            kleine of middelgrote onderneming. Van strategie tot implementatie.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="author-avatar-small">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <span>Stijn De Ketelaere</span>
+                            </div>
+                            <span class="blog-link">Binnenkort beschikbaar</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="blog-card" data-category="ai">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <span class="blog-category">AI Adoptie</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Binnenkort</span>
+                            <span><i class="fas fa-clock"></i> 5 min leestijd</span>
+                        </div>
+                        <h3 class="blog-title">5 Manieren om ChatGPT te Gebruiken in Uw KMO</h3>
+                        <p class="blog-excerpt">
+                            Praktische toepassingen van AI chatbots voor kleine ondernemingen.
+                            Van klantenservice tot content creatie.
+                        </p>
+                        <span class="blog-link">Binnenkort beschikbaar</span>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="blog-card" data-category="automatisering">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <span class="blog-category">Automatisering</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Binnenkort</span>
+                            <span><i class="fas fa-clock"></i> 10 min leestijd</span>
+                        </div>
+                        <h3 class="blog-title">Introductie tot n8n: Automatiseer Zonder te Coderen</h3>
+                        <p class="blog-excerpt">
+                            Ontdek hoe u met n8n complexe workflows kunt bouwen zonder programmeerkennis.
+                            Een praktische gids voor beginners.
+                        </p>
+                        <span class="blog-link">Binnenkort beschikbaar</span>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="blog-card" data-category="digitalisatie">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <span class="blog-category">Digitalisatie</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Binnenkort</span>
+                            <span><i class="fas fa-clock"></i> 6 min leestijd</span>
+                        </div>
+                        <h3 class="blog-title">De Eerste Stappen naar Digitalisatie voor KMO's</h3>
+                        <p class="blog-excerpt">
+                            Een praktische roadmap voor ondernemers die hun bedrijf willen digitaliseren.
+                            Begin klein, denk groot.
+                        </p>
+                        <span class="blog-link">Binnenkort beschikbaar</span>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="blog-card" data-category="tools">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <span class="blog-category">Tools & Tips</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Binnenkort</span>
+                            <span><i class="fas fa-clock"></i> 4 min leestijd</span>
+                        </div>
+                        <h3 class="blog-title">Prompt Engineering: De Kunst van het Juiste Vragen</h3>
+                        <p class="blog-excerpt">
+                            Leer hoe u betere resultaten krijgt van AI tools door slimme prompts te schrijven.
+                            Met praktische voorbeelden.
+                        </p>
+                        <span class="blog-link">Binnenkort beschikbaar</span>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="blog-card" data-category="automatisering">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <span class="blog-category">Automatisering</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Binnenkort</span>
+                            <span><i class="fas fa-clock"></i> 7 min leestijd</span>
+                        </div>
+                        <h3 class="blog-title">Email Marketing Automatiseren: Van Lead tot Klant</h3>
+                        <p class="blog-excerpt">
+                            Hoe u met slimme automatiseringen uw email marketing naar een hoger niveau tilt.
+                            Praktische workflows uitgelegd.
+                        </p>
+                        <span class="blog-link">Binnenkort beschikbaar</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="blog-pagination">
+                <span class="pagination-info">Pagina 1 van 1</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="blog-newsletter-section">
+        <div class="container">
+            <div class="newsletter-card">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="newsletter-text">
+                    <h2>Blijf op de hoogte</h2>
+                    <p>Ontvang maandelijks praktische tips over AI en digitalisatie direct in uw mailbox. Geen spam, alleen waardevolle content.</p>
+                </div>
+                <form class="newsletter-form-inline" id="blog-newsletter-form">
+                    <input type="email" placeholder="Uw e-mailadres" required>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Inschrijven</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="SDK Solutions" class="logo-img">
+                        <span>SDK Solutions</span>
+                    </a>
+                    <p>AI Adoptie Coach & Digitalisatie Expert voor KMO's in Vlaanderen.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/stijndeketelaere" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Diensten</h4>
+                    <ul>
+                        <li><a href="index.html#diensten">AI Adoptie Coaching</a></li>
+                        <li><a href="index.html#diensten">Digitalisatie</a></li>
+                        <li><a href="index.html#diensten">Automatisering</a></li>
+                        <li><a href="index.html#diensten">Web Development</a></li>
+                        <li><a href="index.html#diensten">Opleidingen</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Snelle Links</h4>
+                    <ul>
+                        <li><a href="index.html#over">Over Mij</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Oudenaarde, België</li>
+                        <li><a href="mailto:info@sdk-solutions.be">info@sdk-solutions.be</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 SDK Solutions. Alle rechten voorbehouden.</p>
+                <div class="footer-legal">
+                    <a href="#privacy-policy">Privacy</a>
+                    <a href="#terms">Voorwaarden</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Terug naar boven">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Category filter functionality
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const category = this.dataset.category;
+                const posts = document.querySelectorAll('.blog-card');
+
+                posts.forEach(post => {
+                    if (category === 'all' || post.dataset.category === category) {
+                        post.style.display = '';
+                        post.style.animation = 'fadeInUp 0.5s ease forwards';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
